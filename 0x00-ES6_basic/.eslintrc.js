@@ -26,6 +26,7 @@ module.exports = {
       'LabeledStatement',
       'WithStatement',
     ],
+    'import/prefer-default-export': 'off',
   },
   overrides:[
     {
