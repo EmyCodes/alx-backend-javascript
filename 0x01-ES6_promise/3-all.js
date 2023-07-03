@@ -1,6 +1,6 @@
 import { uploadPhoto, createUser } from './utils';
 
-const myFunc = function handleProfileSignup() {
+export default function handleProfileSignup() {
   const uploadPhotoFunc = uploadPhoto();
   const createUserFunc = createUser();
   const myPromise = Promise.all([uploadPhotoFunc, createUserFunc]);
@@ -12,4 +12,4 @@ const myFunc = function handleProfileSignup() {
   return myPromise;
 }
 
-export default myFunc;
+// export default myFunc;
