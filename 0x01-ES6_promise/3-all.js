@@ -7,7 +7,9 @@ const myFunc = function handleProfileSignup() {
   // console.log(myPromise);
   myPromise.then((result) => {
     console.log(result[0].body, result[1].firstName, result[1].lastName);
-  });
+  })
+  .catch(() => console.log("Signup system offline"));
+  return myPromise;
 }
 
-export default myFunc();
+export default myFunc;
