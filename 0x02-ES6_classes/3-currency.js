@@ -5,25 +5,26 @@ export default class Currency {
   }
 
   // get value for code
-  get() {
+  get code() {
     return this_.code;
   }
 
   // set value for code
-  set(value) {
+  set code(value) {
     this._code = value;
   }
 
   // get value for name
-  get() {
+  get name() {
     return this_.name;
   }
 
   // set value for name
-  set(value) {
+  set name(value) {
     this._name = value;
   }
-
+  //displayFullCurrency that will return 
+  // the attributes in the following format `name (code)`
   displayFullCurrency() {
     return `${this._name} (${this._code})`;
   }
